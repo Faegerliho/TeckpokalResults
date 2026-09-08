@@ -4,37 +4,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Ergebnisse des Teckpokalfliegens." />
-    <meta name="theme-color" content="#102b2b" />
+    <meta name="theme-color" content="#1a1a1a" />
     <title>Teckpokal · Ergebnisse</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <script type="module" src="./app.js"></script>
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#top" aria-label="Teckpokal Ergebnisse"><img src="./assets/msc-logo.png" alt="Modellsport-Club Kirchheim/Teck e.V." /></a>
-        <nav aria-label="Hauptnavigation"><a href="#ergebnisse">Ergebnisse</a></nav>
-        <a class="header-link" href="https://www.teckpokal.de" target="_blank" rel="noreferrer">teckpokal.de <span aria-hidden="true">↗</span></a>
+        <div class="masthead">
+          <a href="https://www.msc-kirchheim.de" target="_blank" rel="noreferrer" aria-label="Modellsport-Club Kirchheim/Teck e.V.">
+            <img class="masthead-base" src="./assets/original/msc-header.png" alt="Modellsport-Club Kirchheim/Teck e.V." />
+            <img class="masthead-teck" src="./assets/original/teck-header.png" alt="Burg Teck" />
+          </a>
+        </div>
+        <nav class="site-nav" aria-label="Hauptnavigation"><a href="https://www.teckpokal.de" target="_blank" rel="noreferrer">Teckpokal</a><a class="is-active" href="#ergebnisse">Ergebnisse</a><a href="https://www.msc-kirchheim.de" target="_blank" rel="noreferrer">MSC Kirchheim</a></nav>
       </header>
 
       <main id="top">
-        <section class="hero compact-hero" aria-labelledby="hero-title">
-          <div class="hero-copy"><p class="eyebrow">RC-Segelflug · Ergebnisarchiv</p><h1 id="hero-title">Teckpokal<br /><em>Ergebnisse.</em></h1><p class="hero-intro">Die Ergebnislisten des Teckpokalfliegens – Jahr für Jahr an einem Ort.</p><a class="button button-light" href="#ergebnisse">Ergebnisse ansehen <span aria-hidden="true">↓</span></a></div>
-          <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="ridge ridge-back"></div><div class="ridge ridge-front"></div><div class="flight-path"></div><div class="plane">✈</div><img class="teck-banner" src="./assets/teck-banner.png" alt="" /><span class="art-label art-label-top">BURG TECK</span><span class="art-label art-label-bottom">HOHENBOL · HÖRNLE</span></div>
-        </section>
-
-        <section class="results-section section" id="ergebnisse" aria-labelledby="results-title">
-          <div class="section-heading"><div><p class="eyebrow eyebrow-dark">Das Klassement</p><h2 id="results-title">Ergebnisse</h2></div><p class="section-note" id="event-meta">Wird geladen …</p></div>
+        <section class="results-section content-card" id="ergebnisse" aria-labelledby="results-title">
+          <div class="section-heading"><div><p class="section-kicker">RC-Teckpokalfliegen</p><h1 id="results-title">Ergebnisse</h1></div><p class="section-note" id="event-meta">Wird geladen …</p></div>
           <div class="results-toolbar" aria-label="Ergebnisse filtern"><label class="select-wrap"><span class="sr-only">Jahr auswählen</span><select id="year-filter" aria-label="Ergebnisjahr"></select><span class="select-chevron" aria-hidden="true">⌄</span></label><label class="select-wrap ranking-picker"><span class="sr-only">Wertung auswählen</span><select id="ranking-filter" aria-label="Wertung"></select><span class="select-chevron" aria-hidden="true">⌄</span></label><a id="source-link" class="source-link" href="#" target="_blank" rel="noreferrer" hidden>Original-PDF ↗</a>
           <noscript><span class="noscript-note">JavaScript muss aktiviert sein, um die Ergebnisdaten zu laden.</span></noscript></div>
           <div class="table-wrap"><table><caption class="sr-only">Ergebnisliste des Teckpokalfliegens</caption><thead><tr id="results-head-row"></tr></thead><tbody id="results-body"></tbody></table><div class="empty-state" id="empty-state" hidden><span class="empty-icon" aria-hidden="true">✦</span><h3>Noch keine Ergebnisse eingetragen</h3><p>Für dieses Jahr sind noch keine Ergebnisse hinterlegt.</p></div></div>
         </section>
       </main>
 
-      <footer class="site-footer"><div class="footer-brand"><span class="brand-mark" aria-hidden="true">✦</span><span>TECK<span>POKAL</span></span></div><p>Ergebnisarchiv für das Teckpokalfliegen</p><div class="footer-links"><a href="https://www.teckpokal.de" target="_blank" rel="noreferrer">Offizielle Website ↗</a><a href="https://github.com/Faegerliho/TeckpokalResults" target="_blank" rel="noreferrer">GitHub ↗</a></div></footer>
+      <footer class="site-footer"><p>Teckpokal-Ergebnisarchiv · MSC Kirchheim/Teck e.V.</p><div class="footer-links"><a href="https://www.teckpokal.de" target="_blank" rel="noreferrer">Offizielle Website</a><a href="https://github.com/Faegerliho/TeckpokalResults" target="_blank" rel="noreferrer">GitHub</a></div></footer>
     </div>
   </body>
 </html>

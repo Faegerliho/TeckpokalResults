@@ -8,20 +8,28 @@ Schlanke öffentliche Ergebnisübersicht für das Teckpokalfliegen: [faegerliho.
 - Die Original-PDFs liegen unter `results/<Jahr>/`.
 - Für 2026 ist `results/2026/` bereits vorbereitet. Finale PDF dort ablegen und die Ergebnisse in `data/results.json` ergänzen.
 
-Ein Ergebnis sieht so aus:
+Die Ergebnisse eines Jahres liegen in `events[].rankings[]`. So können Gesamtwertung, Mannschaftswertung, Klassen- und Sonderwertungen getrennt angezeigt werden. Die Klassen sind `Junior`, `Senior` und `Edelsenior`.
 
 ```json
 {
-  "place": 1,
-  "startNumber": 67,
-  "pilot": "Name",
-  "class": "Senior",
-  "points": 4930.76,
-  "percent": 100.0
+  "id": "overall",
+  "label": "Gesamtwertung",
+  "results": [
+    {
+      "place": 1,
+      "startNumber": 67,
+      "pilot": "Name",
+      "class": "Senior",
+      "team": "Mannschaft",
+      "special": null,
+      "points": 4930.76,
+      "percent": 100.0
+    }
+  ]
 }
 ```
 
-Die Klassen sind `Junior`, `Senior` und `Edelsenior`. Nach einem Commit auf `main` veröffentlicht GitHub Actions die Seite automatisch.
+Die Seite startet automatisch mit dem neuesten Jahr, das Ergebnisse enthält. Nach einem Commit auf `main` veröffentlicht GitHub Actions die Seite automatisch.
 
 ## Lokal ansehen
 

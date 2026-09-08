@@ -1,4 +1,563 @@
 {
   "updatedAt": "2026-09-08",
-  "events": []
+  "events": [
+    {
+      "year": 2026,
+      "title": "62. Teckpokalfliegen",
+      "sourceFile": "results/2026/TP62_2026_Final_Result.pdf",
+      "results": []
+    },
+    {
+      "year": 2025,
+      "title": "61. Teckpokalfliegen",
+      "sourceFile": "results/2025/TP61_2025_Final_Result_2.pdf",
+      "source": "https://www.msc-kirchheim.de/images/stories/Teckpokal/Ergebnisse/TP61_2025_Final_Result_2.pdf",
+      "results": [
+        {
+          "place": 1,
+          "startNumber": 67,
+          "pilot": "Markus Keller",
+          "class": "Senior",
+          "points": 4930.76,
+          "percent": 100.0
+        },
+        {
+          "place": 2,
+          "startNumber": 61,
+          "pilot": "Olaf Starmanns",
+          "class": "Senior",
+          "points": 4929.19,
+          "percent": 99.97
+        },
+        {
+          "place": 3,
+          "startNumber": 39,
+          "pilot": "Max Baschab",
+          "class": "Senior",
+          "points": 4924.51,
+          "percent": 99.87
+        },
+        {
+          "place": 4,
+          "startNumber": 60,
+          "pilot": "Jürgen Glaser",
+          "class": "Edelsenior",
+          "points": 4908.24,
+          "percent": 99.54
+        },
+        {
+          "place": 5,
+          "startNumber": 54,
+          "pilot": "Hans-Gerd Schuerma",
+          "class": "Edelsenior",
+          "points": 4843.07,
+          "percent": 98.22
+        },
+        {
+          "place": 6,
+          "startNumber": 65,
+          "pilot": "Rafael Schydlo",
+          "class": "Senior",
+          "points": 4812.35,
+          "percent": 97.6
+        },
+        {
+          "place": 7,
+          "startNumber": 42,
+          "pilot": "Theo Arnold",
+          "class": "Edelsenior",
+          "points": 4784.9,
+          "percent": 97.04
+        },
+        {
+          "place": 8,
+          "startNumber": 34,
+          "pilot": "Julian Höschle",
+          "class": "Senior",
+          "points": 4784.51,
+          "percent": 97.03
+        },
+        {
+          "place": 9,
+          "startNumber": 5,
+          "pilot": "Jannik Frank",
+          "class": "Senior",
+          "points": 4770.74,
+          "percent": 96.75
+        },
+        {
+          "place": 10,
+          "startNumber": 43,
+          "pilot": "Marcus Briesenick",
+          "class": "Senior",
+          "points": 4763.43,
+          "percent": 96.61
+        },
+        {
+          "place": 11,
+          "startNumber": 4,
+          "pilot": "Thomas Klein",
+          "class": "Senior",
+          "points": 4763.01,
+          "percent": 96.6
+        },
+        {
+          "place": 12,
+          "startNumber": 51,
+          "pilot": "Roland Hägele",
+          "class": "Edelsenior",
+          "points": 4762.31,
+          "percent": 96.58
+        },
+        {
+          "place": 13,
+          "startNumber": 8,
+          "pilot": "Oliver Knötig",
+          "class": "Senior",
+          "points": 4742.79,
+          "percent": 96.19
+        },
+        {
+          "place": 14,
+          "startNumber": 63,
+          "pilot": "Matthias Althammer",
+          "class": "Senior",
+          "points": 4737.27,
+          "percent": 96.08
+        },
+        {
+          "place": 15,
+          "startNumber": 30,
+          "pilot": "Helmut Winter",
+          "class": "Edelsenior",
+          "points": 4719.79,
+          "percent": 95.72
+        },
+        {
+          "place": 16,
+          "startNumber": 2,
+          "pilot": "Claus Scholz",
+          "class": "Senior",
+          "points": 4715.75,
+          "percent": 95.64
+        },
+        {
+          "place": 17,
+          "startNumber": 58,
+          "pilot": "Markus Gutmann",
+          "class": "Senior",
+          "points": 4714.29,
+          "percent": 95.61
+        },
+        {
+          "place": 18,
+          "startNumber": 47,
+          "pilot": "Horst Klaß",
+          "class": "Edelsenior",
+          "points": 4700.54,
+          "percent": 95.33
+        },
+        {
+          "place": 19,
+          "startNumber": 16,
+          "pilot": "Philip Trautwein",
+          "class": "Junior",
+          "points": 4691.21,
+          "percent": 95.14
+        },
+        {
+          "place": 20,
+          "startNumber": 23,
+          "pilot": "Jörg Vogelsang",
+          "class": "Senior",
+          "points": 4660.45,
+          "percent": 94.52
+        },
+        {
+          "place": 21,
+          "startNumber": 22,
+          "pilot": "Kai Friedrich",
+          "class": "Senior",
+          "points": 4657.9,
+          "percent": 94.47
+        },
+        {
+          "place": 22,
+          "startNumber": 41,
+          "pilot": "Thomas Walz",
+          "class": "Edelsenior",
+          "points": 4639.69,
+          "percent": 94.1
+        },
+        {
+          "place": 23,
+          "startNumber": 13,
+          "pilot": "Steffen Wiesner",
+          "class": "Senior",
+          "points": 4637.56,
+          "percent": 94.05
+        },
+        {
+          "place": 24,
+          "startNumber": 27,
+          "pilot": "Timo Schiettinger",
+          "class": "Senior",
+          "points": 4619.48,
+          "percent": 93.69
+        },
+        {
+          "place": 25,
+          "startNumber": 6,
+          "pilot": "Kurt Genkinger",
+          "class": "Edelsenior",
+          "points": 4607.83,
+          "percent": 93.45
+        },
+        {
+          "place": 26,
+          "startNumber": 48,
+          "pilot": "Fabian Müller",
+          "class": "Junior",
+          "points": 4601.9,
+          "percent": 93.33
+        },
+        {
+          "place": 27,
+          "startNumber": 57,
+          "pilot": "Marco Roser",
+          "class": "Senior",
+          "points": 4599.85,
+          "percent": 93.29
+        },
+        {
+          "place": 28,
+          "startNumber": 37,
+          "pilot": "Frank Hanebutte",
+          "class": "Edelsenior",
+          "points": 4566.72,
+          "percent": 92.62
+        },
+        {
+          "place": 29,
+          "startNumber": 44,
+          "pilot": "Karl Stefan Hagmayer",
+          "class": "Senior",
+          "points": 4554.53,
+          "percent": 92.37
+        },
+        {
+          "place": 30,
+          "startNumber": 49,
+          "pilot": "Sacha Däppen",
+          "class": "Senior",
+          "points": 4538.36,
+          "percent": 92.04
+        },
+        {
+          "place": 31,
+          "startNumber": 17,
+          "pilot": "Werner Wimmer",
+          "class": "Edelsenior",
+          "points": 4532.31,
+          "percent": 91.92
+        },
+        {
+          "place": 32,
+          "startNumber": 69,
+          "pilot": "Joachim Regel",
+          "class": "Senior",
+          "points": 4499.32,
+          "percent": 91.25
+        },
+        {
+          "place": 33,
+          "startNumber": 32,
+          "pilot": "Hans Deuschle",
+          "class": "Edelsenior",
+          "points": 4481.58,
+          "percent": 90.89
+        },
+        {
+          "place": 34,
+          "startNumber": 12,
+          "pilot": "Jürgen Dümont",
+          "class": "Edelsenior",
+          "points": 4418.7,
+          "percent": 89.62
+        },
+        {
+          "place": 35,
+          "startNumber": 28,
+          "pilot": "Aron Groß",
+          "class": "Senior",
+          "points": 4417.71,
+          "percent": 89.59
+        },
+        {
+          "place": 36,
+          "startNumber": 11,
+          "pilot": "Christian Schneefuss",
+          "class": "Senior",
+          "points": 4414.23,
+          "percent": 89.52
+        },
+        {
+          "place": 37,
+          "startNumber": 10,
+          "pilot": "Sven Aupperle",
+          "class": "Senior",
+          "points": 4402.57,
+          "percent": 89.29
+        },
+        {
+          "place": 38,
+          "startNumber": 46,
+          "pilot": "Bruno Klingenschmid",
+          "class": "Edelsenior",
+          "points": 4399.72,
+          "percent": 89.23
+        },
+        {
+          "place": 39,
+          "startNumber": 59,
+          "pilot": "Lukas Hafner",
+          "class": "Senior",
+          "points": 4360.18,
+          "percent": 88.43
+        },
+        {
+          "place": 40,
+          "startNumber": 62,
+          "pilot": "Markus Hagmayer",
+          "class": "Senior",
+          "points": 4318.73,
+          "percent": 87.59
+        },
+        {
+          "place": 41,
+          "startNumber": 9,
+          "pilot": "Konstantin Hartenstein",
+          "class": "Edelsenior",
+          "points": 4303.65,
+          "percent": 87.28
+        },
+        {
+          "place": 42,
+          "startNumber": 38,
+          "pilot": "Michael Kippenhan",
+          "class": "Senior",
+          "points": 4265.86,
+          "percent": 86.52
+        },
+        {
+          "place": 43,
+          "startNumber": 55,
+          "pilot": "Adrian Berres",
+          "class": "Senior",
+          "points": 4258.92,
+          "percent": 86.37
+        },
+        {
+          "place": 44,
+          "startNumber": 64,
+          "pilot": "Helmut Plunser",
+          "class": "Edelsenior",
+          "points": 4254.99,
+          "percent": 86.29
+        },
+        {
+          "place": 45,
+          "startNumber": 29,
+          "pilot": "Manuel Tartler",
+          "class": "Senior",
+          "points": 4178.21,
+          "percent": 84.74
+        },
+        {
+          "place": 46,
+          "startNumber": 68,
+          "pilot": "Jörg Rößner",
+          "class": "Edelsenior",
+          "points": 4109.01,
+          "percent": 83.33
+        },
+        {
+          "place": 47,
+          "startNumber": 7,
+          "pilot": "Bernhardt Freier",
+          "class": "Senior",
+          "points": 4089.51,
+          "percent": 82.94
+        },
+        {
+          "place": 48,
+          "startNumber": 50,
+          "pilot": "Marco Thiele",
+          "class": "Senior",
+          "points": 4080.52,
+          "percent": 82.76
+        },
+        {
+          "place": 49,
+          "startNumber": 52,
+          "pilot": "Andreas Mair",
+          "class": "Senior",
+          "points": 4073.79,
+          "percent": 82.62
+        },
+        {
+          "place": 50,
+          "startNumber": 36,
+          "pilot": "Aileen Muff",
+          "class": "Junior",
+          "points": 4011.2,
+          "percent": 81.35
+        },
+        {
+          "place": 51,
+          "startNumber": 56,
+          "pilot": "Stefan Graupner",
+          "class": "Senior",
+          "points": 3935.5,
+          "percent": 79.82
+        },
+        {
+          "place": 52,
+          "startNumber": 20,
+          "pilot": "Albert Vent",
+          "class": "Edelsenior",
+          "points": 3927.84,
+          "percent": 79.66
+        },
+        {
+          "place": 53,
+          "startNumber": 18,
+          "pilot": "Markus Samarajiwa",
+          "class": "Senior",
+          "points": 3889.9,
+          "percent": 78.89
+        },
+        {
+          "place": 54,
+          "startNumber": 21,
+          "pilot": "Volker Zipf",
+          "class": "Senior",
+          "points": 3829.2,
+          "percent": 77.66
+        },
+        {
+          "place": 55,
+          "startNumber": 25,
+          "pilot": "Karl Fischer",
+          "class": "Edelsenior",
+          "points": 3828.18,
+          "percent": 77.64
+        },
+        {
+          "place": 56,
+          "startNumber": 24,
+          "pilot": "Samuel Chirubino",
+          "class": "Senior",
+          "points": 3730.7,
+          "percent": 75.66
+        },
+        {
+          "place": 57,
+          "startNumber": 1,
+          "pilot": "Elmar Gsaller",
+          "class": "Edelsenior",
+          "points": 3612.01,
+          "percent": 73.25
+        },
+        {
+          "place": 58,
+          "startNumber": 14,
+          "pilot": "Erik Schufmann",
+          "class": "Senior",
+          "points": 2644.99,
+          "percent": 53.64
+        },
+        {
+          "place": 59,
+          "startNumber": 53,
+          "pilot": "Thomas Vogelmann",
+          "class": "Senior",
+          "points": 2467.15,
+          "percent": 50.04
+        },
+        {
+          "place": 60,
+          "startNumber": 15,
+          "pilot": "Stefan Engel",
+          "class": "Edelsenior",
+          "points": 2098.03,
+          "percent": 42.55
+        },
+        {
+          "place": 61,
+          "startNumber": 3,
+          "pilot": "Rene Schmid",
+          "class": "Senior",
+          "points": 0.0,
+          "percent": 0.0
+        },
+        {
+          "place": 62,
+          "startNumber": 19,
+          "pilot": "Thorsten Rauber",
+          "class": "Senior",
+          "points": 0.0,
+          "percent": 0.0
+        },
+        {
+          "place": 63,
+          "startNumber": 26,
+          "pilot": "Harald Mandl",
+          "class": "Senior",
+          "points": 0.0,
+          "percent": 0.0
+        },
+        {
+          "place": 64,
+          "startNumber": 31,
+          "pilot": "Oliver Schmidt",
+          "class": "Senior",
+          "points": 0.0,
+          "percent": 0.0
+        },
+        {
+          "place": 66,
+          "startNumber": 35,
+          "pilot": "Steffen Henne",
+          "class": "Senior",
+          "points": 0.0,
+          "percent": 0.0
+        },
+        {
+          "place": 67,
+          "startNumber": 40,
+          "pilot": "Simon Killinger",
+          "class": "Senior",
+          "points": 0.0,
+          "percent": 0.0
+        },
+        {
+          "place": 68,
+          "startNumber": 45,
+          "pilot": "Rainer Lotz",
+          "class": "Edelsenior",
+          "points": 0.0,
+          "percent": 0.0
+        },
+        {
+          "place": 69,
+          "startNumber": 66,
+          "pilot": "Peter Pukropski",
+          "class": "Edelsenior",
+          "points": 0.0,
+          "percent": 0.0
+        }
+      ]
+    }
+  ]
 }

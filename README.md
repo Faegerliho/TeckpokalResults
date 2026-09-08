@@ -1,33 +1,32 @@
 # Teckpokal Results
 
-Öffentliche Ergebnisübersicht für das Teckpokalfliegen – als statische GitHub Page.
+Schlanke öffentliche Ergebnisübersicht für das Teckpokalfliegen: [faegerliho.github.io/TeckpokalResults](https://faegerliho.github.io/TeckpokalResults/)
 
 ## Ergebnisse ergänzen
 
-Die Seite liest `data/results.json`. Ein Event enthält ein Jahr und eine Ergebnisliste:
+- Die Jahresdaten liegen in `data/results.json`.
+- Die Original-PDFs liegen unter `results/<Jahr>/`.
+- Für 2026 ist `results/2026/` bereits vorbereitet. Finale PDF dort ablegen und die Ergebnisse in `data/results.json` ergänzen.
+
+Ein Ergebnis sieht so aus:
 
 ```json
 {
-  "updatedAt": "2026-09-08",
-  "events": [
-    {
-      "year": 2026,
-      "results": [
-        { "place": 1, "pilot": "Name", "class": "Senior", "club": "Verein / Ort", "points": 1000 }
-      ]
-    }
-  ]
+  "place": 1,
+  "startNumber": 67,
+  "pilot": "Name",
+  "class": "Senior",
+  "points": 4930.76,
+  "percent": 100.0
 }
 ```
 
-Erlaubte Klassen sind `Junior`, `Senior` und `Edelsenior`. Nach einem Commit auf `main` wird die Seite automatisch neu veröffentlicht.
+Die Klassen sind `Junior`, `Senior` und `Edelsenior`. Nach einem Commit auf `main` veröffentlicht GitHub Actions die Seite automatisch.
 
 ## Lokal ansehen
-
-Wegen `fetch()` sollte die Seite über einen kleinen Webserver geöffnet werden:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Danach `http://localhost:8000` im Browser aufrufen.
+Dann `http://localhost:8000` öffnen.

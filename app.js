@@ -1,39 +1,42 @@
-const state = { events: [], year: "all", className: "all", search: "" };
+const state = { events: [], year: "" };
 const yearFilter = document.querySelector("#year-filter");
-const searchInput = document.querySelector("#pilot-search");
 const resultsBody = document.querySelector("#results-body");
 const emptyState = document.querySelector("#empty-state");
-const lastUpdated = document.querySelector("#last-updated");
+const eventTitle = document.querySelector("#event-title");
+const eventMeta = document.querySelector("#event-meta");
+const sourceLink = document.querySelector("#source-link");
 
-const allResults = () => state.events.flatMap((event) => (event.results || []).map((result) => ({ ...result, year: event.year })));
+function currentEvent() {
+  return state.events.find((event) => String(event.year) === state.year);
+}
 
 function render() {
-  const query = state.search.trim().toLocaleLowerCase("de-DE");
-  const results = allResults().filter((result) => {
-    const matchesYear = state.year === "all" || String(result.year) === state.year;
-    const matchesClass = state.className === "all" || result.class === state.className;
-    const haystack = `${result.pilot} ${result.club || ""} ${result.class}`.toLocaleLowerCase("de-DE");
-    return matchesYear && matchesClass && (!query || haystack.includes(query));
-  });
+  const event = currentEvent();
+  const results = event?.results || [];
+
+  eventTitle.textContent = event?.title || "Teckpokalfliegen";
+  eventMeta.textContent = event ? `${results.length} Pilotinnen und Piloten · Gesamtwertung` : "Noch keine Ergebnisse hinterlegt";
+  sourceLink.hidden = !event?.source;
+  if (event?.source) sourceLink.href = event.source;
 
   resultsBody.innerHTML = results.map((result) => `
-    <tr><td>${result.place ?? "–"}</td><td>${escapeHtml(result.pilot)}</td><td>${escapeHtml(result.class)}</td><td>${escapeHtml(result.club || "–")}</td><td>${result.points ?? "–"}</td></tr>
+    <tr>
+      <td class="place">${result.place}</td>
+      <td class="pilot"><strong>${escapeHtml(result.pilot)}</strong><span>Startnr. ${result.startNumber}</span></td>
+      <td>${escapeHtml(result.class)}</td>
+      <td class="points">${formatNumber(result.points)}</td>
+      <td class="percent">${formatNumber(result.percent)} %</td>
+    </tr>
   `).join("");
   emptyState.hidden = results.length > 0;
 }
 
-function escapeHtml(value) {
-  return String(value).replace(/[&<>'"]/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[character]));
+function formatNumber(value) {
+  return new Intl.NumberFormat("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(value);
 }
 
-function bindFilters() {
-  yearFilter.addEventListener("change", (event) => { state.year = event.target.value; render(); });
-  searchInput.addEventListener("input", (event) => { state.search = event.target.value; render(); });
-  document.querySelectorAll(".class-tab").forEach((tab) => tab.addEventListener("click", () => {
-    state.className = tab.dataset.class;
-    document.querySelectorAll(".class-tab").forEach((item) => { item.classList.toggle("is-active", item === tab); item.setAttribute("aria-selected", item === tab ? "true" : "false"); });
-    render();
-  }));
+function escapeHtml(value) {
+  return String(value).replace(/[&<>'"]/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[character]));
 }
 
 async function loadResults() {
@@ -42,15 +45,16 @@ async function loadResults() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     state.events = data.events || [];
-    const years = [...new Set(state.events.map((event) => event.year))].sort((a, b) => b - a);
-    yearFilter.insertAdjacentHTML("beforeend", years.map((year) => `<option value="${year}">${year}</option>`).join(""));
-    lastUpdated.textContent = data.updatedAt ? `Stand: ${new Intl.DateTimeFormat("de-DE").format(new Date(data.updatedAt))}` : "Ergebnisarchiv";
+    const years = state.events.map((event) => String(event.year)).sort((a, b) => b - a);
+    yearFilter.innerHTML = years.map((year) => `<option value="${year}">${year}</option>`).join("");
+    state.year = years[0] || "";
+    yearFilter.value = state.year;
+    yearFilter.addEventListener("change", (event) => { state.year = event.target.value; render(); });
+    render();
   } catch (error) {
-    lastUpdated.textContent = "Ergebnisarchiv";
+    eventMeta.textContent = "Ergebnisdaten konnten nicht geladen werden.";
     console.error("Ergebnisdaten konnten nicht geladen werden", error);
   }
-  render();
 }
 
-bindFilters();
 loadResults();

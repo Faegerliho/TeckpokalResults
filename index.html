@@ -15,7 +15,7 @@
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#top" aria-label="Teckpokal Startseite"><span class="brand-mark" aria-hidden="true">✦</span><span>TECK<span>POKAL</span></span></a>
+        <a class="brand" href="#top" aria-label="Teckpokal Ergebnisse"><img src="./assets/msc-logo.png" alt="Modellsport-Club Kirchheim/Teck e.V." /></a>
         <nav aria-label="Hauptnavigation"><a href="#ergebnisse">Ergebnisse</a></nav>
         <a class="header-link" href="https://www.teckpokal.de" target="_blank" rel="noreferrer">teckpokal.de <span aria-hidden="true">↗</span></a>
       </header>
@@ -23,12 +23,13 @@
       <main id="top">
         <section class="hero compact-hero" aria-labelledby="hero-title">
           <div class="hero-copy"><p class="eyebrow">RC-Segelflug · Ergebnisarchiv</p><h1 id="hero-title">Teckpokal<br /><em>Ergebnisse.</em></h1><p class="hero-intro">Die Ergebnislisten des Teckpokalfliegens – Jahr für Jahr an einem Ort.</p><a class="button button-light" href="#ergebnisse">Ergebnisse ansehen <span aria-hidden="true">↓</span></a></div>
-          <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="ridge ridge-back"></div><div class="ridge ridge-front"></div><div class="flight-path"></div><div class="plane">✈</div><span class="art-label art-label-top">BURG TECK</span><span class="art-label art-label-bottom">HOHENBOL · HÖRNLE</span></div>
+          <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="ridge ridge-back"></div><div class="ridge ridge-front"></div><div class="flight-path"></div><div class="plane">✈</div><img class="teck-banner" src="./assets/teck-banner.png" alt="" /><span class="art-label art-label-top">BURG TECK</span><span class="art-label art-label-bottom">HOHENBOL · HÖRNLE</span></div>
         </section>
 
         <section class="results-section section" id="ergebnisse" aria-labelledby="results-title">
           <div class="section-heading"><div><p class="eyebrow eyebrow-dark">Das Klassement</p><h2 id="results-title">Ergebnisse</h2></div><p class="section-note" id="event-meta">Wird geladen …</p></div>
-          <div class="results-toolbar" aria-label="Ergebnisse filtern"><label class="select-wrap"><span class="sr-only">Jahr auswählen</span><select id="year-filter" aria-label="Ergebnisjahr"></select><span class="select-chevron" aria-hidden="true">⌄</span></label><a id="source-link" class="source-link" href="#" target="_blank" rel="noreferrer" hidden>Original-PDF ↗</a></div>
+          <div class="results-toolbar" aria-label="Ergebnisse filtern"><label class="select-wrap"><span class="sr-only">Jahr auswählen</span><select id="year-filter" aria-label="Ergebnisjahr"><option value="2025">2025</option><option value="2026">2026 (noch keine Ergebnisse)</option></select><span class="select-chevron" aria-hidden="true">⌄</span></label><a id="source-link" class="source-link" href="#" target="_blank" rel="noreferrer" hidden>Original-PDF ↗</a>
+          <noscript><span class="noscript-note">JavaScript muss aktiviert sein, um die Ergebnisdaten zu laden.</span></noscript></div>
           <div class="table-wrap"><table><caption class="sr-only">Ergebnisliste des Teckpokalfliegens</caption><thead><tr><th scope="col">Platz</th><th scope="col">Pilot</th><th scope="col">Klasse</th><th scope="col">Punkte</th><th scope="col">%</th></tr></thead><tbody id="results-body"></tbody></table><div class="empty-state" id="empty-state" hidden><span class="empty-icon" aria-hidden="true">✦</span><h3>Noch keine Ergebnisse eingetragen</h3><p>Für dieses Jahr sind noch keine Ergebnisse hinterlegt.</p></div></div>
         </section>
       </main>

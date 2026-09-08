@@ -13,8 +13,9 @@ function render() {
   const event = currentEvent();
   const results = event?.results || [];
   eventMeta.textContent = event ? `${event.title} · ${results.length} Pilotinnen und Piloten · Gesamtwertung` : "Noch keine Ergebnisse hinterlegt";
-  sourceLink.hidden = !event?.source;
-  if (event?.source) sourceLink.href = event.source;
+  const source = event?.source;
+  sourceLink.hidden = !source;
+  if (source) sourceLink.href = source;
   resultsBody.innerHTML = results.map((result) => `
     <tr>
       <td class="place">${result.place}</td>
@@ -41,9 +42,13 @@ async function loadResults() {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     state.events = data.events || [];
-    const years = state.events.map((event) => String(event.year)).sort((a, b) => b - a);
+    const events = [...state.events].sort((a, b) => Number(b.year) - Number(a.year));
+    state.events = events;
+    const years = events.map((event) => String(event.year));
     yearFilter.innerHTML = years.map((year) => `<option value="${year}">${year}</option>`).join("");
-    state.year = years[0] || "";
+    // Nicht den leeren Zukunftsjahrgang anzeigen: beim Öffnen direkt die neuesten vorhandenen Ergebnisse zeigen.
+    const latestWithResults = events.find((event) => Array.isArray(event.results) && event.results.length > 0);
+    state.year = String((latestWithResults || events[0])?.year || "");
     yearFilter.value = state.year;
     yearFilter.addEventListener("change", (event) => { state.year = event.target.value; render(); });
     render();

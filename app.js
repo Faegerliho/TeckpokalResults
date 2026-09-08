@@ -2,7 +2,6 @@ const state = { events: [], year: "" };
 const yearFilter = document.querySelector("#year-filter");
 const resultsBody = document.querySelector("#results-body");
 const emptyState = document.querySelector("#empty-state");
-const eventTitle = document.querySelector("#event-title");
 const eventMeta = document.querySelector("#event-meta");
 const sourceLink = document.querySelector("#source-link");
 
@@ -13,12 +12,9 @@ function currentEvent() {
 function render() {
   const event = currentEvent();
   const results = event?.results || [];
-
-  eventTitle.textContent = event?.title || "Teckpokalfliegen";
-  eventMeta.textContent = event ? `${results.length} Pilotinnen und Piloten · Gesamtwertung` : "Noch keine Ergebnisse hinterlegt";
+  eventMeta.textContent = event ? `${event.title} · ${results.length} Pilotinnen und Piloten · Gesamtwertung` : "Noch keine Ergebnisse hinterlegt";
   sourceLink.hidden = !event?.source;
   if (event?.source) sourceLink.href = event.source;
-
   resultsBody.innerHTML = results.map((result) => `
     <tr>
       <td class="place">${result.place}</td>

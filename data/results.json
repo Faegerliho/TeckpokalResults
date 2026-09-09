@@ -1866,6 +1866,30 @@
               "percent": 96.75,
               "teamPoints": 11318.41,
               "teamPercent": 78.53
+            },
+            {
+              "place": 14,
+              "startNumber": 50,
+              "pilot": "Marco Thiele",
+              "class": "Senior",
+              "team": "Akamodell",
+              "special": null,
+              "points": 4080.52,
+              "percent": 82.76,
+              "teamPoints": 11318.41,
+              "teamPercent": 78.53
+            },
+            {
+              "place": 14,
+              "startNumber": 53,
+              "pilot": "Thomas Vogelmann",
+              "class": "Senior",
+              "team": "Akamodell",
+              "special": null,
+              "points": 2467.15,
+              "percent": 50.04,
+              "teamPoints": 11318.41,
+              "teamPercent": 78.53
             }
           ]
         },
@@ -2527,6 +2551,46 @@
               "special": null,
               "points": 3828.18,
               "percent": 77.64
+            },
+            {
+              "place": 19,
+              "startNumber": 1,
+              "pilot": "Elmar Gsaller",
+              "class": "Edelsenior",
+              "team": null,
+              "special": null,
+              "points": 3612.01,
+              "percent": 73.25
+            },
+            {
+              "place": 20,
+              "startNumber": 15,
+              "pilot": "Stefan Engel",
+              "class": "Edelsenior",
+              "team": null,
+              "special": null,
+              "points": 2098.03,
+              "percent": 42.55
+            },
+            {
+              "place": 21,
+              "startNumber": 45,
+              "pilot": "Rainer Lotz",
+              "class": "Edelsenior",
+              "team": null,
+              "special": null,
+              "points": 0.0,
+              "percent": 0.0
+            },
+            {
+              "place": 22,
+              "startNumber": 66,
+              "pilot": "Peter Pukropski",
+              "class": "Edelsenior",
+              "team": null,
+              "special": null,
+              "points": 0.0,
+              "percent": 0.0
             }
           ]
         },

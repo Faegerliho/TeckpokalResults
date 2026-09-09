@@ -2551,6 +2551,46 @@
               "special": null,
               "points": 3828.18,
               "percent": 77.64
+            },
+            {
+              "place": 19,
+              "startNumber": 1,
+              "pilot": "Elmar Gsaller",
+              "class": "Edelsenior",
+              "team": null,
+              "special": null,
+              "points": 3612.01,
+              "percent": 73.25
+            },
+            {
+              "place": 20,
+              "startNumber": 15,
+              "pilot": "Stefan Engel",
+              "class": "Edelsenior",
+              "team": null,
+              "special": null,
+              "points": 2098.03,
+              "percent": 42.55
+            },
+            {
+              "place": 21,
+              "startNumber": 45,
+              "pilot": "Rainer Lotz",
+              "class": "Edelsenior",
+              "team": null,
+              "special": null,
+              "points": 0.0,
+              "percent": 0.0
+            },
+            {
+              "place": 22,
+              "startNumber": 66,
+              "pilot": "Peter Pukropski",
+              "class": "Edelsenior",
+              "team": null,
+              "special": null,
+              "points": 0.0,
+              "percent": 0.0
             }
           ]
         },

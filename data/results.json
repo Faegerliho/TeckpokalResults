@@ -1866,6 +1866,30 @@
               "percent": 96.75,
               "teamPoints": 11318.41,
               "teamPercent": 78.53
+            },
+            {
+              "place": 14,
+              "startNumber": 50,
+              "pilot": "Marco Thiele",
+              "class": "Senior",
+              "team": "Akamodell",
+              "special": null,
+              "points": 4080.52,
+              "percent": 82.76,
+              "teamPoints": 11318.41,
+              "teamPercent": 78.53
+            },
+            {
+              "place": 14,
+              "startNumber": 53,
+              "pilot": "Thomas Vogelmann",
+              "class": "Senior",
+              "team": "Akamodell",
+              "special": null,
+              "points": 2467.15,
+              "percent": 50.04,
+              "teamPoints": 11318.41,
+              "teamPercent": 78.53
             }
           ]
         },
